@@ -1,0 +1,6 @@
+.center {
+  justify-content: center;
+  height: calc(100vh - 19rem);
+  align-items: center;
+  display: flex;
+}

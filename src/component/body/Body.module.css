@@ -1,0 +1,11 @@
+.body {
+}
+.col {
+  height: calc(100vh - 5rem);
+  overflow: scroll;
+  padding: 1.5rem !important;
+  -ms-overflow-style: none;
+}
+.col::-webkit-scrollbar{
+  display:none;
+}

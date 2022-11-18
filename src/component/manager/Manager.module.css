@@ -1,0 +1,17 @@
+.body {
+  padding: 1rem;
+}
+.managerTitle {
+  margin: .25rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.col {
+  height: calc(100vh - 5rem);
+  overflow: scroll;
+  padding: 1.5rem !important;
+  -ms-overflow-style: none;
+}
+.col::-webkit-scrollbar{
+  display:none;
+}

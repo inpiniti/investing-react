@@ -1,0 +1,28 @@
+# Base 이미지
+FROM node:14.15.1-alpine3.12
+
+# 작업 공간
+RUN mkdir /app
+WORKDIR /app
+
+ENV PORT 6006
+ENV NODE_PATH=src
+
+# 빌드된 산출물 도커 이미지로 복사
+COPY package-lock.json ./package-lock.json
+COPY package.json ./package.json
+
+RUN npm install
+
+RUN mkdir ./.storybook
+COPY ./.storybook ./.storybook
+RUN mkdir ./public
+COPY ./public ./public
+RUN mkdir ./src
+COPY ./src ./src
+RUN mkdir ./storybook-static
+COPY ./storybook-static ./storybook-static
+
+# 실행 명령어
+EXPOSE $PORT
+CMD [ "npm", "run", "storybook"]

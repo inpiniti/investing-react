@@ -1,0 +1,9 @@
+.scroll {
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  overflow: scroll;
+}
+
+.scroll::-webkit-scrollbar{
+  display:none;
+}

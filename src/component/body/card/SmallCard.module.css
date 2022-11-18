@@ -1,0 +1,59 @@
+.card {
+  box-shadow: rgb(149 157 165 / 20%) 0px 0px 3px;
+  border-radius: 0.75rem !important;
+  border-width: inherit !important;
+  margin-bottom: 0.25rem;
+}
+.card:hover {
+  background-color: #edeced;
+  cursor: pointer;
+}
+.body {
+  padding: 0.5rem 0.5rem !important;
+}
+.row {
+  margin: 0 !important;
+}
+.col {
+  padding-right: calc(var(--bs-gutter-x) * .1) !important;
+  padding-left: calc(var(--bs-gutter-x) * .1) !important;
+}
+.blankCard {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.subtitle {
+  font-weight: bold !important;
+  font-size: .75rem !important;
+  color: #408cfb;
+}
+.title {
+  font-weight: bold !important;
+  font-size: .75rem !important;
+}
+.blankCardTitle {
+  font-size: 1.25rem !important;
+}
+.key {
+  padding-top: 0rem;
+  font-size: 0.5rem;
+  color: #929292;
+  font-weight: bold;
+}
+.value {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.low {
+  color: #84bcbd;
+}
+.high {
+  color: #fd5f37;
+}
+.progressBar {
+  border-radius: 0.75rem !important;
+}
+.blankColer {
+  color: #929292 !important;
+}

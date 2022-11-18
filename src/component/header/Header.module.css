@@ -1,0 +1,28 @@
+.header {
+}
+
+.logo {
+  line-height: 2.3;
+  font-weight: bold;
+}
+.mg {
+  margin-right: .5rem;
+}
+.whiteFont {
+  color: white !important;
+}
+
+.formControl {
+  background-color: #f5f7f9 !important;
+  border: 0px !important;
+  border-radius: 0.8rem !important;
+  line-height: 2 !important;
+  font-weight: bold !important;
+}
+
+.link,
+.link:active,
+.link:hover{
+  text-decoration: none;
+  color: inherit;
+}

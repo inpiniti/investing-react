@@ -1,0 +1,50 @@
+.app3{
+  background: var(--bg-0);
+
+  color: var(--app-color);
+  height: 100%;
+  width: 100%;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: initial;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+}
+
+.headerWrap {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  border-bottom: 1px solid #f3f3f3;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headerWrap2 {
+  display: flex;
+  align-items: center;
+  height: 9rem;
+
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  right: 0;
+}
+
+.bodyWrap {
+  position: fixed;
+  width: 100%;
+  top: 5rem;
+  background-color: #f3f3f3;
+}

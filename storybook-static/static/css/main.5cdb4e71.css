@@ -1,0 +1,1333 @@
+.Card_card__3mv7p {
+  border-width: inherit !important;
+  color: white;
+  border-radius: .5rem;
+  min-height: 3rem;
+  box-sizing: border-box;
+}
+
+.Card_hover__KVifw:hover {
+  border: #0c63e4 .2rem solid !important;
+  cursor: pointer;
+  padding: calc(1rem - .2rem) !important;
+}
+
+.Card_card1__GbDry { background-color: #1e1e1e }
+.Card_card2__77S8v { background-color: #2e2e2e }
+.Card_card3__88a7q { background-color: #3e3e3e }
+.Card_card4__zFtEr { background-color: #4e4e4e }
+.Card_card5__eISfJ { background-color: #5e5e5e }
+.Card_card6__M4nGV { background-color: #6e6e6e }
+.Card_card7__nn2rJ { background-color: #7e7e7e }
+.Grid_grid__befb6 {
+  display: grid;
+  grid-gap: 1rem;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.Grid_grid1__o9Njk {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.Grid_grid2__ztu4D {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Grid_grid3__ZGbdC {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.Grid_grid4__nFdCL {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.Grid_layout__UtvRl {
+  grid-template-columns: 40rem 1fr 20rem;
+  grid-template-rows: 3rem 1fr 20rem;
+}
+.StockList_card__SqUG2 {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.StockList_blankCard__hkLn\+ {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.StockList_subtitle__KgmCq {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.StockList_title__oYWZ5 {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.StockList_blankCardTitle__gyXKI {
+  font-size: 1.25rem !important;
+}
+.StockList_key__oPF0W {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.StockList_value__fdEb3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.StockList_low__yJc14 {
+  color: #84bcbd;
+}
+.StockList_high__njhdN {
+  color: #fd5f37;
+}
+.StockList_progressBar__LpBN0 {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.StockList_blankColer__n83GM {
+  color: #929292 !important;
+}
+.Stock_stockWrap__Tv\+Tl {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: .5rem;
+}
+.Stock_current__PDaVU {
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+  float: left;
+}
+.Stock_winRateWrap__kzvuo {
+  display: flex;
+  align-items: flex-end;
+}
+.Stock_winRate__WeHX- {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  font-weight: bold;
+  float: left;
+}
+.Stock_blankCard__IzDKJ {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.Stock_subtitle__vSTkd {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.Stock_title__5izHi {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.Stock_blankCardTitle__C3qry {
+  font-size: 1.25rem !important;
+}
+.Stock_key__QGRt6 {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.Stock_value__eqtSL {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.Stock_low__1EUbU {
+  color: #84bcbd;
+}
+.Stock_high__aTJRL {
+  color: #fd5f37;
+}
+.Stock_progressBar__EnIaJ {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.Stock_blankColer__REGtg {
+  color: #929292 !important;
+}
+.Scroll_scroll__DQzDO {
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  overflow: scroll;
+}
+
+.Scroll_scroll__DQzDO::-webkit-scrollbar{
+  display:none;
+}
+.AllStock_card__FP8nJ {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.AllStock_blankCard__FTQ2z {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.AllStock_subtitle__2lJtW {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.AllStock_title__gx3MN {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.AllStock_blankCardTitle__01qBW {
+  font-size: 1.25rem !important;
+}
+.AllStock_key__UCjSj {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.AllStock_value__ofUfn {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.AllStock_low__MM4do {
+  color: #84bcbd;
+}
+.AllStock_high__KwdF3 {
+  color: #fd5f37;
+}
+.AllStock_progressBar__51p1z {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.AllStock_blankColer__RDXVe {
+  color: #929292 !important;
+}
+.SearchBar_card__AwlAQ {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.SearchBar_blankCard__GKHc8 {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.SearchBar_subtitle__jckWa {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.SearchBar_title__KaPMs {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.SearchBar_blankCardTitle__7v83T {
+  font-size: 1.25rem !important;
+}
+.SearchBar_key__e1zkp {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.SearchBar_value__GK2nN {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.SearchBar_low__9nP5G {
+  color: #84bcbd;
+}
+.SearchBar_high__sLll6 {
+  color: #fd5f37;
+}
+.SearchBar_progressBar__scvVm {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.SearchBar_blankColer__2v1he {
+  color: #929292 !important;
+}
+.BottomBar_card__5WoaI {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.BottomBar_blankCard__Kayce {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.BottomBar_subtitle__TOGcq {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.BottomBar_title__fFSJi {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.BottomBar_blankCardTitle__FOYyF {
+  font-size: 1.25rem !important;
+}
+.BottomBar_key__JnjPS {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.BottomBar_value__oTZ5i {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.BottomBar_low__SrV-4 {
+  color: #84bcbd;
+}
+.BottomBar_high__ZIdGX {
+  color: #fd5f37;
+}
+.BottomBar_progressBar__\+\+XKd {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.BottomBar_blankColer__R5zpb {
+  color: #929292 !important;
+}
+.ListOfTrainedModels_card__Ls8jg {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.ListOfTrainedModels_blankCard__1IS1I {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.ListOfTrainedModels_subtitle__UGNqL {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.ListOfTrainedModels_title__TBa71 {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.ListOfTrainedModels_blankCardTitle__T\+iI5 {
+  font-size: 1.25rem !important;
+}
+.ListOfTrainedModels_key__WGd7K {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.ListOfTrainedModels_value__OtlTg {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.ListOfTrainedModels_low__qfDXh {
+  color: #84bcbd;
+}
+.ListOfTrainedModels_high__9HtUp {
+  color: #fd5f37;
+}
+.ListOfTrainedModels_progressBar__4Rb9m {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.ListOfTrainedModels_blankColer__65iHe {
+  color: #929292 !important;
+}
+.Models_card__16z3y {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.Models_blankCard__r-rHA {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.Models_subtitle__d2wsW {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.Models_title__M2jP2 {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.Models_blankCardTitle__UqbE8 {
+  font-size: 1.25rem !important;
+}
+.Models_key__6FYTg {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.Models_value__bM1vW {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.Models_low__GhR0N {
+  color: #84bcbd;
+}
+.Models_high__jxr6G {
+  color: #fd5f37;
+}
+.Models_progressBar__L-3YU {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.Models_blankColer__ukYsm {
+  color: #929292 !important;
+}
+.StockDetails_card__LBTiP {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.StockDetails_blankCard__0tUQH {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.StockDetails_subtitle__hiTY6 {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.StockDetails_title__0Z4Cd {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.StockDetails_blankCardTitle__9WSaW {
+  font-size: 1.25rem !important;
+}
+.StockDetails_key__CEzXz {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.StockDetails_value__jRGFw {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.StockDetails_low__VRk09 {
+  color: #84bcbd;
+}
+.StockDetails_high__X8G64 {
+  color: #fd5f37;
+}
+.StockDetails_progressBar__iT453 {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.StockDetails_blankColer__mcBVw {
+  color: #929292 !important;
+}
+.CompanyOverview_card__FkgMH {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.CompanyOverview_blankCard__xD5WT {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.CompanyOverview_subtitle__n-xPA {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.CompanyOverview_title__cfoJ5 {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.CompanyOverview_blankCardTitle__4g-mC {
+  font-size: 1.25rem !important;
+}
+.CompanyOverview_key__Va4TP {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.CompanyOverview_value__5ahQC {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.CompanyOverview_low__CQiUw {
+  color: #84bcbd;
+}
+.CompanyOverview_high__n2\+q7 {
+  color: #fd5f37;
+}
+.CompanyOverview_progressBar__9oJDF {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.CompanyOverview_blankColer__Xt0XP {
+  color: #929292 !important;
+}
+.Chart_card__ioMLE {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.Chart_blankCard__1uaPz {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.Chart_subtitle__FfV4V {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.Chart_title__i2jAL {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.Chart_blankCardTitle__GHcLl {
+  font-size: 1.25rem !important;
+}
+.Chart_key__einq9 {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.Chart_value__\+CYHU {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.Chart_low__\+Na9s {
+  color: #84bcbd;
+}
+.Chart_high__eNMfJ {
+  color: #fd5f37;
+}
+.Chart_progressBar__dvmTI {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.Chart_blankColer__vf8n- {
+  color: #929292 !important;
+}
+.InvestmentOpinionConsensus_card__YWfH5 {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.InvestmentOpinionConsensus_blankCard__DvZSu {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.InvestmentOpinionConsensus_subtitle__xKVdo {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.InvestmentOpinionConsensus_title__IQbXJ {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.InvestmentOpinionConsensus_blankCardTitle__DBQOC {
+  font-size: 1.25rem !important;
+}
+.InvestmentOpinionConsensus_key__h4hI8 {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.InvestmentOpinionConsensus_value__B0sve {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.InvestmentOpinionConsensus_low__kgnSn {
+  color: #84bcbd;
+}
+.InvestmentOpinionConsensus_high__ychOD {
+  color: #fd5f37;
+}
+.InvestmentOpinionConsensus_progressBar__3MXLL {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.InvestmentOpinionConsensus_blankColer__ojKbQ {
+  color: #929292 !important;
+}
+.MarketPriceAndShareholderStatus_card__0Pkqp {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.MarketPriceAndShareholderStatus_blankCard__xPkId {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.MarketPriceAndShareholderStatus_subtitle__kZDrL {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.MarketPriceAndShareholderStatus_title__4pAE0 {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.MarketPriceAndShareholderStatus_blankCardTitle__QIJqI {
+  font-size: 1.25rem !important;
+}
+.MarketPriceAndShareholderStatus_key__1LjIJ {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.MarketPriceAndShareholderStatus_value__On2Gv {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.MarketPriceAndShareholderStatus_low__rlR3f {
+  color: #84bcbd;
+}
+.MarketPriceAndShareholderStatus_high__SphR\+ {
+  color: #fd5f37;
+}
+.MarketPriceAndShareholderStatus_progressBar__N9H5B {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.MarketPriceAndShareholderStatus_blankColer__12yAl {
+  color: #929292 !important;
+}
+.History_card__9vZp3 {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.History_blankCard__r8VKa {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.History_subtitle__nRuM4 {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.History_title__FRh9b {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.History_blankCardTitle__Glx\+5 {
+  font-size: 1.25rem !important;
+}
+.History_key__OJwyC {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.History_value__9Hj8q {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.History_low__68yKZ {
+  color: #84bcbd;
+}
+.History_high__17e52 {
+  color: #fd5f37;
+}
+.History_progressBar__1NJtV {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.History_blankColer__NHxIi {
+  color: #929292 !important;
+}
+.Financial_card__hLtyC {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.Financial_blankCard__hHO-w {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.Financial_subtitle__y2I9Z {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.Financial_title__0FcXL {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.Financial_blankCardTitle__lGuNe {
+  font-size: 1.25rem !important;
+}
+.Financial_key__WrKa\+ {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.Financial_value__zUKu7 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.Financial_low__ITKJt {
+  color: #84bcbd;
+}
+.Financial_high__8Uf5U {
+  color: #fd5f37;
+}
+.Financial_progressBar__Zc4lD {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.Financial_blankColer__UlTph {
+  color: #929292 !important;
+}
+.TopBar_topbar__-CBF0 {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Login_card__4b5-B {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.Login_blankCard__-obAU {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.Login_subtitle__NTPGw {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.Login_title__kwvPq {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.Login_blankCardTitle__UQjO\+ {
+  font-size: 1.25rem !important;
+}
+.Login_key__9o6Cq {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.Login_value__Q\+j1O {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.Login_low__mgsDk {
+  color: #84bcbd;
+}
+.Login_high__FMBJ3 {
+  color: #fd5f37;
+}
+.Login_progressBar__GmbAK {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.Login_blankColer__rUVKp {
+  color: #929292 !important;
+}
+.Logo_card__Jekgv {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.Logo_blankCard__Vbygt {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.Logo_subtitle__yE0lF {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.Logo_title__ETUs3 {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.Logo_blankCardTitle__rFNtK {
+  font-size: 1.25rem !important;
+}
+.Logo_key__mND1T {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.Logo_value__s3p\+5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.Logo_low__8VH8K {
+  color: #84bcbd;
+}
+.Logo_high__1yNEW {
+  color: #fd5f37;
+}
+.Logo_progressBar__rvy4Y {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.Logo_blankColer__u3nbg {
+  color: #929292 !important;
+}
+.TopStock_topStock__rgqKr {
+  height: calc(100% - 3.5rem);
+}
+.SelectButton_card__-EPtD {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.SelectButton_blankCard__NcZpe {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.SelectButton_subtitle__ziiRC {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.SelectButton_title__02ALX {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.SelectButton_blankCardTitle__h0Lhb {
+  font-size: 1.25rem !important;
+}
+.SelectButton_key__aFwXB {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.SelectButton_value__vCMad {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.SelectButton_low__bAhcD {
+  color: #84bcbd;
+}
+.SelectButton_high__JA0RS {
+  color: #fd5f37;
+}
+.SelectButton_progressBar__tPlaQ {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.SelectButton_blankColer__MxX6Y {
+  color: #929292 !important;
+}
+.MySport_card__1G2f0 {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.MySport_blankCard__125nU {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.MySport_subtitle__CmDqB {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.MySport_title__uEtbv {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.MySport_blankCardTitle__893LT {
+  font-size: 1.25rem !important;
+}
+.MySport_key__N-pBm {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.MySport_value__DcIwu {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.MySport_low__3pVjX {
+  color: #84bcbd;
+}
+.MySport_high__j0P7X {
+  color: #fd5f37;
+}
+.MySport_progressBar__hD0rU {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.MySport_blankColer__fbngg {
+  color: #929292 !important;
+}
+.PopularDiscussion_card__YjRLl {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.PopularDiscussion_blankCard__U3JSN {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.PopularDiscussion_subtitle__7fFeN {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.PopularDiscussion_title__6Ehim {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.PopularDiscussion_blankCardTitle__AoUkD {
+  font-size: 1.25rem !important;
+}
+.PopularDiscussion_key__ZM0LE {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.PopularDiscussion_value__tuh4J {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.PopularDiscussion_low__HPuIl {
+  color: #84bcbd;
+}
+.PopularDiscussion_high__hFllJ {
+  color: #fd5f37;
+}
+.PopularDiscussion_progressBar__BV6Dj {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.PopularDiscussion_blankColer__mBDZV {
+  color: #929292 !important;
+}
+.PopularSearchItems_card__E808m {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.PopularSearchItems_blankCard__o2Qmp {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.PopularSearchItems_subtitle__Piveb {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.PopularSearchItems_title__6IAF1 {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.PopularSearchItems_blankCardTitle__SwQIZ {
+  font-size: 1.25rem !important;
+}
+.PopularSearchItems_key__NlSkZ {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.PopularSearchItems_value__U3lDK {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.PopularSearchItems_low__0XnlQ {
+  color: #84bcbd;
+}
+.PopularSearchItems_high__6igOr {
+  color: #fd5f37;
+}
+.PopularSearchItems_progressBar__kiJQH {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.PopularSearchItems_blankColer__KnPQ4 {
+  color: #929292 !important;
+}
+.SoaringViews_card__vSKJ4 {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.SoaringViews_blankCard__ObtcF {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.SoaringViews_subtitle__VIaqn {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.SoaringViews_title__3O4dU {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.SoaringViews_blankCardTitle__plnc5 {
+  font-size: 1.25rem !important;
+}
+.SoaringViews_key__qhJw0 {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.SoaringViews_value__jRgS6 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.SoaringViews_low__3sJr7 {
+  color: #84bcbd;
+}
+.SoaringViews_high__CrGU1 {
+  color: #fd5f37;
+}
+.SoaringViews_progressBar__dOcXL {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.SoaringViews_blankColer__xObiZ {
+  color: #929292 !important;
+}
+.Card_card__r680E {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 1rem !important;
+  border-width: inherit !important;
+  margin-bottom: 1rem;
+}
+.Card_blankCard__nF1Q2 {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.Card_subtitle__AT9ye {
+  font-weight: bold !important;
+  font-size: 0.75rem !important;
+  color: #408cfb;
+}
+.Card_title__RZdY\+ {
+  font-weight: bold !important;
+  font-size: 1.75rem !important;
+  line-height: 1.7 !important;
+}
+.Card_blankCardTitle__EQJv\+ {
+  font-size: 1.25rem !important;
+}
+.Card_key__5JgRU {
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #929292;
+  font-weight: bold;
+}
+.Card_value__Je7aP {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.Card_low__WIUJ4 {
+  color: #84bcbd;
+}
+.Card_high__Yjcow {
+  color: #fd5f37;
+}
+.Card_progressBar__qyWqN {
+  margin-top: 0.75rem;
+  height: 1.75rem !important;
+  border-radius: 0.75rem !important;
+}
+.Card_blankColer__qrdwx {
+  color: #929292 !important;
+}
+.SmallCard_card__674Hs {
+  box-shadow: rgb(149 157 165 / 20%) 0px 0px 3px;
+  border-radius: 0.75rem !important;
+  border-width: inherit !important;
+  margin-bottom: 0.25rem;
+}
+.SmallCard_card__674Hs:hover {
+  background-color: #edeced;
+  cursor: pointer;
+}
+.SmallCard_body__N7vRp {
+  padding: 0.5rem 0.5rem !important;
+}
+.SmallCard_row__fe4nb {
+  margin: 0 !important;
+}
+.SmallCard_col__blgtf {
+  padding-right: calc(var(--bs-gutter-x) * .1) !important;
+  padding-left: calc(var(--bs-gutter-x) * .1) !important;
+}
+.SmallCard_blankCard__lx6J- {
+  border: 0.125rem dashed #929292 !important;
+  background-color: #b2b4b5;
+}
+.SmallCard_subtitle__8X9HF {
+  font-weight: bold !important;
+  font-size: .75rem !important;
+  color: #408cfb;
+}
+.SmallCard_title__XT6X1 {
+  font-weight: bold !important;
+  font-size: .75rem !important;
+}
+.SmallCard_blankCardTitle__-W3bp {
+  font-size: 1.25rem !important;
+}
+.SmallCard_key__UoHf- {
+  padding-top: 0rem;
+  font-size: 0.5rem;
+  color: #929292;
+  font-weight: bold;
+}
+.SmallCard_value__QY24j {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.SmallCard_low__B1UzU {
+  color: #84bcbd;
+}
+.SmallCard_high__U\+2v8 {
+  color: #fd5f37;
+}
+.SmallCard_progressBar__ZCMdM {
+  border-radius: 0.75rem !important;
+}
+.SmallCard_blankColer__duJbU {
+  color: #929292 !important;
+}
+.storybook-button {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+}
+.storybook-button--primary {
+  color: white;
+  background-color: #1ea7fd;
+}
+.storybook-button--secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+.storybook-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.storybook-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.storybook-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.wrapper {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+svg {
+  display: inline-block;
+  vertical-align: top;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1;
+  margin: 6px 0 6px 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+button + button {
+  margin-left: 10px;
+}
+
+.welcome {
+  color: #333;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+section {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 48px 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  color: #333;
+}
+
+section h2 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1;
+  margin: 0 0 4px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+section p {
+  margin: 1em 0;
+}
+
+section a {
+  text-decoration: none;
+  color: #1ea7fd;
+}
+
+section ul {
+  padding-left: 30px;
+  margin: 1em 0;
+}
+
+section li {
+  margin-bottom: 8px;
+}
+
+section .tip {
+  display: inline-block;
+  border-radius: 1em;
+  font-size: 11px;
+  line-height: 12px;
+  font-weight: 700;
+  background: #e7fdd8;
+  color: #66bf3c;
+  padding: 4px 12px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+section .tip-wrapper {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+section .tip-wrapper svg {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-right: 4px;
+  vertical-align: top;
+  margin-top: 3px;
+}
+
+section .tip-wrapper svg path {
+  fill: #1ea7fd;
+}
+
+
+/*# sourceMappingURL=main.5cdb4e71.css.map*/

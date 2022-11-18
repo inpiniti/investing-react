@@ -1,0 +1,21 @@
+.card {
+  border-width: inherit !important;
+  color: white;
+  border-radius: .35rem;
+  min-height: 3rem;
+  box-sizing: border-box;
+}
+
+.hover:hover {
+  border: #0c63e4 .1rem solid !important;
+  cursor: pointer;
+  padding: calc(.5rem - .1rem) !important;
+}
+
+.card1 { background-color: #1e1e1e }
+.card2 { background-color: #2e2e2e }
+.card3 { background-color: #3e3e3e }
+.card4 { background-color: #4e4e4e }
+.card5 { background-color: #5e5e5e }
+.card6 { background-color: #6e6e6e }
+.card7 { background-color: #7e7e7e }
