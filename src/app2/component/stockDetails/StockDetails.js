@@ -7,20 +7,56 @@ import MarketPriceAndShareholderStatus from "./marketPriceAndShareholderStatus/M
 import Grid from "../../common component/Grid";
 import History from "./history/History";
 import Button from "react-bootstrap/Button";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import StatisticsDay from "./statistics/StatisticsDay";
 import Statistics from "./statistics/Statistics";
+import userDataStorage from "../../../store/userDataStorage";
+import {useEffect, useState} from "react";
+import {post} from "../../../store/interestingStock";
 
 export default function StockDetails() {
+  const [userData, setUserData] = useState([]);
+  const dispatch = useDispatch();
+
+  // 패치
+  const InterestingStockPost = async () => {
+    const result = await fetchCall()
+    dispatch(post(result));
+  }
+
+  const fetchCall = async () => {
+    const url = "http://113.131.152.55:5000/interesting"
+    const result = await fetch(url, {
+      method: "POST",
+      body: userData
+    }).then(res => {
+        return res.json();
+      })
+    return JSON.parse(result);
+  }
+
+  useEffect(() => {
+    userDataStorage.get(userData).then(setUserData).catch(console.error);
+  }, []);
+
+  useEffect(async () => {
+    await InterestingStockPost(userData)
+  }, [userData]);
 
   // 구독
   const stockDetails = useSelector(state => state.stockDetails);
+
+  // 관심 fetch
+  const interestingStockAdd = () => {
+    setUserData([...new Set([...userData, stockDetails.status.change])])
+    userDataStorage.set(userData).catch(console.error);
+  }
 
   return (
     <>
       <Card className="p-1">
         <div style={{'height': '3rem'}}>
-          <Button variant="primary" type="submit">관심종목 추가</Button>
+          <Button variant="primary" type="submit" onClick={interestingStockAdd}>관심종목 추가</Button>
         </div>
         <div style={{'height': 'calc(100% - 3rem)'}}>
           <Grid gridType={4} className='h-100 p-0'>
