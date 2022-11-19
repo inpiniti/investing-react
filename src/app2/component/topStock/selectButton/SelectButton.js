@@ -1,5 +1,7 @@
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
+import Button from 'react-bootstrap/Button';
+import Spinner from 'react-bootstrap/Spinner';
 
 import {useDispatch} from "react-redux";
 import {post} from "../../../../store/topStock";
@@ -20,24 +22,53 @@ export default function SelectButton() {
     "http://113.131.152.55:5000/naver/news",
   ];
   const [title, setTitle] = useState(dropdownList[0]);
+  const [loading, setLoading] = useState(false);
 
   const dropdownClick = (index) => {
     setTitle(dropdownList[index]);
-    topStockPost(index);
+    TopStockPost(index);
   }
 
   // 패치
   const dispatch = useDispatch();
-  const topStockPost = (index) => dispatch(post(useFetch(apiList[index])));
+  const TopStockPost = async (index) => {
+    const result = await fetchCall(index)
+    console.log(result)
+    dispatch(post(result));
+  }
+
+  const fetchCall = async (index) => {
+    const url = apiList[index]
+    setLoading(true)
+    const result = await fetch(url)
+      .then(res => {
+        return res.json();
+      })
+    setLoading(false)
+    return JSON.parse(result);
+  }
 
   return (
     <>
       <div>
-        <DropdownButton id="dropdown-item-button" title={title}>
-          {dropdownList.map((dropdown,index) => (
-            <Dropdown.Item onClick={() => dropdownClick(index)} key={index}>{dropdown}</Dropdown.Item>
-          ))}
-        </DropdownButton>
+        {loading ?
+          <Button variant="primary" disabled>
+            <Spinner
+              as="span"
+              animation="border"
+              size="sm"
+              role="status"
+              aria-hidden="true"
+            /> {title}
+            <span className="visually-hidden">Loading...</span>
+          </Button>
+        :
+          <DropdownButton id="dropdown-item-button" title={title}>
+            {dropdownList.map((dropdown, index) => (
+              <Dropdown.Item onClick={() => dropdownClick(index)} key={index}>{dropdown}</Dropdown.Item>
+            ))}
+          </DropdownButton>
+        }
       </div>
     </>
   );

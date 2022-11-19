@@ -9,7 +9,7 @@ const initialState = [];
 export default function selected(state = initialState, action) {
   switch (action.type) {
     case POST:
-      return [...new Set([...state, action.value])];
+      return [...action.value];
      case DELETE:
       return state.filter(value => value !== action.value);
      default:
