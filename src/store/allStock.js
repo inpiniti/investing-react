@@ -5,10 +5,6 @@ import {
   handleAsyncActions,
 } from '../lib/asyncUtils'
 
-const POST = "allStock/POST"
-const GET = "allStock/GET"
-const DELETE = "allStock/DEL"
-
 // 전체 종목 조회하기
 const GET_ALL_STOCK = 'GET_ALL_STOCK'; // 요청 시작
 const GET_ALL_STOCK_SUCCESS = 'GET_ALL_STOCK_SUCCESS'; // 요청 성공
@@ -16,8 +12,9 @@ const GET_ALL_STOCK_ERROR = 'GET_ALL_STOCK_ERROR'; // 요청 실패
 
 // 액션 함수
 export const post = createPromiseThunk(GET_ALL_STOCK, allStockAPI.getAllStock);
-export const get = (stock) => ({ type: GET, value: stock });
-export const del = (stock) => ({ type: DELETE, value: stock });
+// 기존 액션 함수
+// export const post = (stock) => ({ type: POST, value: stock });
+
 
 // 초기화
 const initialState = reducerUtils.initial();
@@ -28,14 +25,11 @@ export default function allStock(state = initialState, action) {
     case GET_ALL_STOCK:
     case GET_ALL_STOCK_SUCCESS:
     case GET_ALL_STOCK_ERROR:
-      return handleAsyncActions(GET_ALL_STOCK, "data")(state, action);
-    case POST:
-      return [...action.value];
-     case DELETE:
-      return state.filter(value => value !== action.value);
-    case GET:
-      return state;
-     default:
+      return handleAsyncActions(GET_ALL_STOCK)(state, action);
+    // 기존 처리
+    //case POST:
+    //  return [...action.value];
+    default:
       return state;
   }
 }
