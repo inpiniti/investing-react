@@ -19,37 +19,31 @@ export default function StockDetails() {
   const dispatch = useDispatch();
 
   // 패치
-  const InterestingStockPost = async () => {
-    const result = await fetchCall()
-    dispatch(post(result));
-  }
-
   const fetchCall = async () => {
     const url = "http://113.131.152.55:5000/interesting"
     const result = await fetch(url, {
       method: "POST",
-      body: userData
+      body: JSON.stringify({ data: userData }),
+      headers: {'Content-Type': 'application/json'},
     }).then(res => {
-        return res.json();
-      })
-    return JSON.parse(result);
+      return res.json();
+    })
+    .catch(() => {
+      console.error('StockDetails error');
+    })
+
+    dispatch(post(typeof(result) === "object" ? [] : JSON.parse(result)));
   }
-
-  useEffect(() => {
-    userDataStorage.get(userData).then(setUserData).catch(console.error);
-  }, []);
-
-  useEffect(async () => {
-    await InterestingStockPost(userData)
-  }, [userData]);
 
   // 구독
   const stockDetails = useSelector(state => state.stockDetails);
 
   // 관심 fetch
-  const interestingStockAdd = () => {
-    setUserData([...new Set([...userData, stockDetails.status.change])])
-    userDataStorage.set(userData).catch(console.error);
+  const interestingStockAdd = async () => {
+    setUserData(oldArray => [...oldArray, stockDetails.status.name])
+    await fetchCall()
+    //setUserData([...new Set([...userData, stockDetails.status.name])])
+
   }
 
   return (
