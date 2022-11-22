@@ -10,8 +10,8 @@ export default function BottomBar() {
 
   return (
     <>
-      <Card className="p-1">
-        <StockList type={8} stocklist={interestingStock}/>
+      <Card className="p-1 h-100">
+        <StockList type={7} stocklist={interestingStock}/>
       </Card>
     </>
   );
