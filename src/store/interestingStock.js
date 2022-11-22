@@ -14,6 +14,8 @@ export default function interesting(state = initialState, action) {
       return [...action.value];
      case DELETE:
       return state.filter(value => value !== action.value);
+     case GET:
+      return state;
      default:
       return state;
   }
