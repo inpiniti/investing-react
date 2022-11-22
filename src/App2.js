@@ -25,7 +25,11 @@ function App2() {
         return res.json();
       })
       .then(data => {
-        allStockPost(JSON.parse(data));
+        if(data == {}) {
+          allStockPost(data);
+        } else {
+          allStockPost(JSON.parse(data));
+        }
       })
       .catch(() => {
         console.error('getAllStock error');
