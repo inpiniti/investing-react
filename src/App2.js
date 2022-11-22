@@ -17,29 +17,9 @@ import  {post} from './store/allStock';
 function App2() {
 
   const dispatch = useDispatch();
-  const allStockPost = (data) => dispatch(post(data));
-
-  const getAllStock = () => {
-    fetch('http://113.131.152.55:5000/test2')
-      .then(res => {
-        return res.json();
-      })
-      .then(data => {
-        if(data == {}) {
-          allStockPost(data);
-        } else {
-          allStockPost(JSON.parse(data));
-        }
-      })
-      .catch(() => {
-        console.error('getAllStock error');
-      })
-    ;
-  }
-
   const tasks = [
     {
-      fn: getAllStock, // this is the function which is triggered based on the config
+      fn: dispatch(post()), // this is the function which is triggered based on the config
       id: "getAllStock",
       config: "* * * * *", // runs at every minutes
       name: "", // optional

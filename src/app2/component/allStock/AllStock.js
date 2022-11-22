@@ -1,6 +1,3 @@
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-
 import styles from './AllStock.module.css';
 import Card from "../../common component/Card";
 import SearchBar from "./searchBar/SearchBar";
@@ -19,7 +16,7 @@ export default function AllStock() {
           <SearchBar/>
         </div>
         <div style={{'height': 'calc(100% - 3rem)'}}>
-          <StockList type={2} stocklist={stocklist}/>
+          <StockList type={2} stocklist={stocklist.data}/>
         </div>
       </Card>
     </>

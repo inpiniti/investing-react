@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import {applyMiddleware, createStore} from 'redux';
 import rootReducer from './store/index';
+import ReduxThunk from 'redux-thunk';
 
 // 리덕스 개발자 도구
 import { composeWithDevTools } from 'redux-devtools-extension'; // 리덕스 개발자 도구
@@ -15,7 +16,7 @@ import { composeWithDevTools } from 'redux-devtools-extension'; // 리덕스 개
 import selectedToDetails from './middlewares/selectedToDetails'
 
 const store = createStore(rootReducer,
-  composeWithDevTools(applyMiddleware(selectedToDetails)),
+  composeWithDevTools(applyMiddleware(selectedToDetails, ReduxThunk)),
 );
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
