@@ -10,41 +10,45 @@ import Button from "react-bootstrap/Button";
 import {useDispatch, useSelector} from "react-redux";
 import StatisticsDay from "./statistics/StatisticsDay";
 import Statistics from "./statistics/Statistics";
-import userDataStorage from "../../../store/userDataStorage";
 import {useEffect, useState} from "react";
-import {post} from "../../../store/interestingStock";
+import {getInterestingStock} from "../../../store/interestingStock";
+import userDataStorage from "../../../store/userDataStorage";
 
 export default function StockDetails() {
   const [userData, setUserData] = useState([]);
   const dispatch = useDispatch();
 
-  // 패치
-  const fetchCall = async () => {
-    const url = "http://113.131.152.55:5000/interesting"
-    const result = await fetch(url, {
-      method: "POST",
-      body: JSON.stringify({ data: userData }),
-      headers: {'Content-Type': 'application/json'},
-    }).then(res => {
-      return res.json();
-    })
-    .catch(() => {
-      console.error('StockDetails error');
-    })
-
-    dispatch(post(typeof(result) === "object" ? [] : JSON.parse(result)));
-  }
-
   // 구독
   const stockDetails = useSelector(state => state.stockDetails);
 
-  // 관심 fetch
-  const interestingStockAdd = async () => {
-    setUserData(oldArray => [...oldArray, stockDetails.status.name])
-    await fetchCall()
-    //setUserData([...new Set([...userData, stockDetails.status.name])])
+  // 버튼 클릭
+  const interestingStockAdd = () => {
+    console.log('userData', userData)
+    console.log('stockDetails.status.name', stockDetails.status.name)
 
+    // add UserData
+    setUserData(oldArray => {
+      const newArray = [...oldArray, stockDetails.status.name]
+      console.log('newArray', newArray)
+
+      // set 저장소
+      userDataStorage.set(newArray).catch(console.error);
+      patch(newArray)
+      return newArray
+    })
   }
+
+  // 패치
+  const patch = (newArray) => dispatch(getInterestingStock(newArray))
+
+  // 초기화
+  useEffect(() => {
+    // get 저장소
+    userDataStorage
+      .get(userData)
+      .then(setUserData)
+      .catch(console.error);
+  }, [])
 
   return (
     <>

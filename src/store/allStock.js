@@ -11,7 +11,7 @@ const GET_ALL_STOCK_SUCCESS = 'GET_ALL_STOCK_SUCCESS'; // 요청 성공
 const GET_ALL_STOCK_ERROR = 'GET_ALL_STOCK_ERROR'; // 요청 실패
 
 // 액션 함수
-export const post = createPromiseThunk(GET_ALL_STOCK, allStockAPI.getAllStock);
+export const getAllStock = createPromiseThunk(GET_ALL_STOCK, allStockAPI.getAllStock);
 // 기존 액션 함수
 // export const post = (stock) => ({ type: POST, value: stock });
 

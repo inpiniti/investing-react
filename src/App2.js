@@ -12,17 +12,34 @@ import BottomBar from "./app2/component/bottomBar/BottomBar";
 import TopBar from "./app2/component/topBar/TopBar";
 import Grid from "./app2/common component/Grid";
 import {useDispatch, useSelector} from "react-redux";
-import  {post} from './store/allStock';
+import  {getAllStock} from './store/allStock';
+import  {getInterestingStock} from './store/interestingStock';
+import {useEffect, useState} from "react";
+import userDataStorage from "./store/userDataStorage";
 
 function App2() {
+  const [userData, setUserData] = useState([]);
+
+  // 초기화
+  useEffect(() => {
+    // get 저장소
+    userDataStorage
+      .get(userData)
+      .then(setUserData)
+      .catch(console.error);
+  }, [])
 
   const dispatch = useDispatch();
   const tasks = [
     {
-      fn: dispatch(post()), // this is the function which is triggered based on the config
+      fn: dispatch(getAllStock()), // this is the function which is triggered based on the config
       id: "getAllStock",
       config: "* * * * *", // runs at every minutes
-      name: "", // optional
+    },
+    {
+      fn: userData.length && dispatch(getInterestingStock(userData)), // this is the function which is triggered based on the config
+      id: "getInterestingStock",
+      config: "* * * * *", // runs at every minutes
     },
   ];
 
