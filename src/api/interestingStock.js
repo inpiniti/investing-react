@@ -1,5 +1,5 @@
 export const getInterestingStock = async interestingArr => {
-  return await fetch('http://113.131.152.55:5000/interesting', {
+  return await fetch(`${process.env.REACT_APP_API_URL_LEARNING_PREDICTION}${process.env.REACT_APP_API_URL_INTERESTING}`, {
     method: "POST",
     body: JSON.stringify({ data: interestingArr }),
     headers: {'Content-Type': 'application/json'},

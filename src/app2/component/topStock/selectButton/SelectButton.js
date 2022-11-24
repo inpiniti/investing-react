@@ -17,9 +17,9 @@ export default function SelectButton() {
     "네이버 인기뉴스",
   ];
   const apiList = [
-    "http://113.131.152.55:5000/naver/popular",
-    "http://113.131.152.55:5000/naver/discussion",
-    "http://113.131.152.55:5000/naver/news",
+    `${process.env.REACT_APP_API_URL_LEARNING_PREDICTION}/naver/popular`,
+    `${process.env.REACT_APP_API_URL_LEARNING_PREDICTION}/naver/discussion`,
+    `${process.env.REACT_APP_API_URL_LEARNING_PREDICTION}/naver/news`,
   ];
   const [title, setTitle] = useState(dropdownList[0]);
   const [loading, setLoading] = useState(false);

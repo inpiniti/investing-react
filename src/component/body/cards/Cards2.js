@@ -20,7 +20,7 @@ export default function Cards1() {
   useEffect(() => {
     const dispatchInvesting = () => {
       if(selectedStock.length !== 0) {
-        fetch('http://113.131.152.55:5000/test4?'+ new URLSearchParams({
+        fetch(`${process.env.REACT_APP_API_URL_LEARNING_PREDICTION}/test4?`+ new URLSearchParams({
           data: selectedStock.join(),
         }))
           .then(res => {

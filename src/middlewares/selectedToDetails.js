@@ -2,7 +2,7 @@ import {post} from "../store/stockDetails";
 
 const selectedToDetails = store => next => action => {
   if(action.type == 'selected/POST'){
-    fetch(`http://113.131.152.55:8080/daum/data?isuName=${action.value}`)
+    fetch(`${process.env.REACT_APP_API_URL_DATA_COLLECTION}${process.env.REACT_APP_API_URL_DETAIL_DATA}?isuName=${action.value}`)
       .then(res => {
         return res.json();
       })

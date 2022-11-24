@@ -11,7 +11,7 @@ export default function Manger() {
   const [learnedFiles, setLearnedFiles] = useState([]);
 
   useEffect(() => {
-    fetch('http://113.131.152.55:5000/learnedFiles')
+    fetch(`${process.env.REACT_APP_API_URL_LEARNING_PREDICTION}/learnedFiles`)
       .then(res => {
         return res.json();
       })

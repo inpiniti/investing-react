@@ -1,5 +1,5 @@
 export const getAllStock = async () => {
-  return await fetch('http://113.131.152.55:5000/test2')
+  return await fetch(`${process.env.REACT_APP_API_URL_LEARNING_PREDICTION}${process.env.REACT_APP_API_URL_ALL_STOCK}`)
     .then(res => {
       return res.json();
     })

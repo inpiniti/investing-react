@@ -19,7 +19,7 @@ export default function Cards1() {
       if(IS_STOCK_MARKET_TIME > '09:00:00' &&
         IS_STOCK_MARKET_TIME < '15:30:00'
       ) {
-        fetch('http://113.131.152.55:5000/test2')
+        fetch(`${process.env.REACT_APP_API_URL_LEARNING_PREDICTION}${process.env.REACT_APP_API_URL_ALL_STOCK}`)
           .then(res => {
             return res.json();
           })
