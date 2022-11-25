@@ -24,20 +24,33 @@ function App2() {
   useEffect(() => {
     // get 저장소
     userDataStorage
-      .get(userData)
-      .then(setUserData)
+      .get()
+      .then((newData) => {
+        setUserData(old => {
+          old.push(...newData)
+        })
+      })
       .catch(console.error);
   }, [])
 
   const dispatch = useDispatch();
+
+  const dispatchAllStock = () => {
+    dispatch(getAllStock())
+  }
+  const dispatchInterestingStock = () => {
+    if(userData.length != 0)
+      dispatch(getInterestingStock(userData))
+  }
+
   const tasks = [
     {
-      fn: dispatch(getAllStock()), // this is the function which is triggered based on the config
+      fn: dispatchAllStock, // this is the function which is triggered based on the config
       id: "getAllStock",
       config: "* * * * *", // runs at every minutes
     },
     {
-      fn: userData.length && dispatch(getInterestingStock(userData)), // this is the function which is triggered based on the config
+      fn: dispatchInterestingStock, // this is the function which is triggered based on the config
       id: "getInterestingStock",
       config: "* * * * *", // runs at every minutes
     },
